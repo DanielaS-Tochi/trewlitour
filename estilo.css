@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}*/
+
+/*  color de fondo de página y fuente*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+/*-------------------------- Navbar -------------------------------------------*/
+.menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar {
+    background-color: #0c3483; 
+    position: fixed; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+    height: 60px; 
+    z-index: 9999;
+}
+
+.navbar a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-weight: bold; 
+}
+
+/* Ajusta el margen derecho del logo para separarlo del borde izquierdo */
+.navbar .logo-2 {
+    width: 100px; 
+    height: auto;
+    cursor: pointer; 
+    margin-right: 20px; 
+}
+
+/* Ajusta el margen izquierdo de .menu para centrar los elementos */
+.navbar .menu {
+    margin-left: auto; 
+}
+
+.navbar .iconos-redes {
+    margin-left: auto; 
+    margin-right: 20px;
+}
+
+.navbar .iconos-redes a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0; 
+    font-size: 20px;
+}
+
+/*----------------------- Header Vehiculos deslizable --------------------*/
+
+/* sirve para centrar las class*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*tamaño de las flechas*/
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font: 35px;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+    font-size: 50px;
+}
+/*color de las flechas*/
+.swiper-button-next,
+.swiper-button-prev {
+    color: #0c3483;
+}
+/*color de los puntitos del slider*/
+.swiper-pagination-bullet {
+    background-color: #0c3483;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #e2cac9;
+}
+
+/*sector del slider principal*/
+.header-content {
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+/*alineacion de texto del slider*/
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider-txt {
+    margin-left: 85px;
+    width: 50%;
+}
+/*color y tamaño del texto del slider*/
+.slider-txt h1 {
+    font-size: 70px;
+    color: #352f2f;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slider-txt p {
+    font-size: 18px;
+    color: #2e2929;
+}
+
+/*boton de galeria*/
+.botones {
+    margin-top: 50px;
+}
+
+/*forma y color del circulo que rodea al boton de galeria*/
+.btn-1 {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #ebe3e3;
+    color: #2b2626;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+/*color del circulo al posicinar el cursor*/
+.btn-1:hover {
+    background-color: #0c3483;
+    color:#ebe3e3
+}
+/*tamaño y posicion de las imagenes del slider*/
+.slider-img {
+    width: 50%;
+}
+
+.slider-img img {
+    margin-right: 225px;
+    width: 550px;
+}
+
+/*sector del slider principal*/
+.header-content {
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+/*alineacion de texto del slider*/
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider-txt {
+    margin-left: 85px;
+    width: 50%;
+}
+/*color y tamaño del texto del slider*/
+.slider-txt h1 {
+    font-size: 70px;
+    color: #352f2f;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slider-txt p {
+    font-size: 18px;
+    color: #2e2929;
+}
+
+/*boton de galeria*/
+.botones {
+    margin-top: 50px;
+}
+
+/*forma y color del circulo que rodea al boton de galeria*/
+.btn-1 {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #ebe3e3;
+    color: #2b2626;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+    transition: transform 0.3s;
+}
+
+/*color del circulo al posicinar el cursor*/
+.btn-1:hover {
+    background-color: #0c3483;
+    color:#ebe3e3;
+    transform: scale(1.05);
+}
+/*tamaño y posicion de las imagenes del slider*/
+.slider-img {
+    width: 50%;
+}
+
+.slider-img img {
+    margin-right: 225px;
+    width: 550px;
+}
+
+/*------------------------------------------------*/
+
+/*tamaño del icono del inicio cuando se encuentra responsive*/
+.menu-icono {
+    width: 25px;
+}
+/*el icono se esconde cuando esta en modo escritorio*/
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+/*-----------------------Servicios-----------------------*/
+
+/*color de fondo de la seccion de servicios*/
+/* Estilo para la sección de servicios */
+.products {
+    background-color: #e7e9ff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor de las tarjetas */
+.service-container {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-bottom: 100px;
+}
+
+/* Estilo base para las tarjetas */
+.service-card {
+    flex: 0 1 calc(20% - 20px); /* Ajusta el ancho de cada tarjeta según el espacio disponible */
+    background-color: #fff; /* Color de fondo de las tarjetas */
+    padding: 20px;
+    border-radius: 10px; 
+    border: 2px solid #1551c7; 
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6); 
+    max-width: calc(20% - 20px);
+    transition: transform 0.3s; 
+}
+
+/* Cambia el tamaño de las tarjetas en hover */
+.service-card:hover {
+    transform: scale(1.05);
+}
+/* Estilos para la imagen en las tarjetas */
+.service-card i {
+    font-size: 26px; 
+    color: #007bff; 
+}
+
+/* Estilos para el título y descripción en las tarjetas */
+.service-card h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.service-card p {
+    font-size: 14px;
+}
+
+.section-title{
+    font-size: 50px;
+    color: #352f2f;
+}
+
+/* Ajusta los estilos según tu diseño y preferencias */
+
+/*--------------------INFORMACION--------------*/
+
+/*seccion de la la ubicacion y tamaños de la informacion*/
+
+.info {
+    padding: 80px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c3c6e8 ;
+    
+}
+
+.info-img {
+    width: 100%;
+}
+/*tamaño de la imagen de la informacion*/
+.info-img img {
+    width: 100%; 
+    max-width: 650px; 
+    height: auto; 
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+/*para que la seccion se va correctamente*/
+.info-txt {
+    width: 50%;
+    text-align: center;
+    padding: 0 20px;
+}
+/*tamaño y color de la palabra nosotros*/
+.info-txt h2 {
+    font-size: 50px;
+    color: #352f2f;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+/*color y tamaño del parrafo*/ 
+.info-txt p {
+    font-size: 18px;
+    color: #2e2929;
+    margin-bottom: 50px;
+}
+
+
+/*-------------------- Reservas ------------------------------*/
+
+.title-form {
+    margin-top: 80px; 
+}
+
+.container-form {
+    text-align: center; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color:#2e2929;
+}   
+
+.products-form{
+    background-color:#c3c6e8 ;
+    padding: 20px;
+    text-align: center;
+}
+
+.etiq-camp {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 10px; 
+    text-align: left;
+}
+  
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 30%; 
+    padding: 10px; 
+    margin: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.radio,
+.checkbox {
+    margin-right: 50px;
+}
+  
+/*--------------------Footer/Contacto -----------------------------*/
+
+/* color tamaño posicion etc*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #0c3483;
+    color: #fff;
+}
+
+.logo-footer {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.logo-footer img {
+    width: 180px; 
+}
+
+.location, .contact-info, .horario-de-atencion {
+    flex: 1; 
+    text-align: center; 
+    padding: 10px; 
+    border-right: 1px solid #fff; 
+}
+
+.contact-info .icon-footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0; 
+    font-size: 20px;
+}
+
+.location, .contact-info {
+    padding-bottom: 20px; 
+}
+
+
+/*--------------------- sección del responsive --------------------*/
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .menu-2 {
+        display: none;
+    }
+
+    .logo-1 {
+        width: 600px;
+        align-self: flex-start;
+    }
+
+    .logo-2 {
+        width: 0;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    /*color y posición del menú al apretar el ícono*/
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #756767;
+        display: none;
+    }
+
+    /*el menú cubre todo el ancho cuando se le hace clic*/
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    /*para que funcione el menú*/
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header-content {
+        padding: 30px;
+        margin-top: 100px;
+    }
+
+    /*sección del slider para acomodar el tamaño cuando está responsive*/
+    .slider {
+        flex-direction: column;
+    }
+
+    .slider-txt {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slider-txt h1 {
+        font-size: 50px;
+    }
+
+    /*tamaño del texto*/
+    .slider-txt p {
+        font-size: 16px;
+    }
+
+    .btn-1 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .slider-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*tamaño de las imágenes del slider*/
+    .slider-img img {
+        margin-right: 0px;
+        width: 300px;
+    }
+
+    /*este código hace que los bullets (puntos) no queden muy pegados a la imagen*/
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets,
+    .swiper-pagination-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: -7px;
+    }
+
+    /*sección de los servicios tamaño etc*/
+    .tabs {
+        padding: 50px 30px;
+    }
+
+    .tabs label {
+        width: 33%;
+    }
+
+    /*sección de la información tamaño etc*/
+    .info {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .info-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*tamaño de la imagen de servicio*/
+    .info-img img {
+        width: 400px;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    /*tamaño de título y los textos de servicio*/
+    .info-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-txt h2 {
+        font-size: 50px;
+    }
+
+    .info-txt p {
+        font-size: 16px;
+    }
+
+    .btn-1 {
+        font-size: 16px;
+    }
+
+    /*tamaño de la sección de horario*/
+    .horario {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .horario-info h2 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .horario-txt {
+        flex-direction: column;
+    }
+
+    /*tamaño y ubicación de las redes sociales de los enlaces*/
+    .socials {
+        justify-content: center;
+    }
+
+    .socials img {
+        margin: 8px 0 0 0;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*ubicación de los enlaces*/
+    .links h4 {
+        margin: 25px 0px 10px 0px;
+    }
+}
